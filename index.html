@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WiCyS @ UCI — Women in CyberSecurity</title>
+<meta name="description" content="Student chapter of Women in CyberSecurity at UC Irvine. Open applications, events, and our cyber project competition.">
+<link rel="icon" href="images/wicys-mark.png">
+<meta property="og:title" content="WiCyS @ UCI — Women in CyberSecurity">
+<meta property="og:description" content="Student chapter of Women in CyberSecurity at UC Irvine. Open applications, events, and our cyber project competition.">
+<meta property="og:image" content="images/wicys-logo.png">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin:0; background:#ffffff; color:#3a2f52; font-family:'JetBrains Mono',monospace; -webkit-font-smoothing:antialiased; }
+  a { color:#6d3fa8; }
+  a:hover { color:#4a1f78; }
+  *:focus-visible { outline:2px solid #6d3fa8; outline-offset:3px; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation:none !important; transition:none !important; } }
+  @keyframes sky-tw { 0%,100% { opacity:.14; transform:scale(.85); } 50% { opacity:.9; transform:scale(1.15); } }
+  @keyframes sky-drift { from { transform:translate3d(0,0,0); } to { transform:translate3d(-90px,-70px,0); } }
+  @keyframes sky-float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-28px); } }
+  @keyframes sky-grid { from { background-position:0 0; } to { background-position:120px 200px; } }
+  @keyframes sky-grid-2 { from { background-position:0 0; } to { background-position:-180px 140px; } }
+</style>
+</helmet>
+
+<div style="position:relative;minHeight:100vh;background:#ffffff">
+  <div aria-hidden="true" style="position:fixed;inset:0;zIndex:0;pointerEvents:none">
+    <dc-import name="PixelSky" hint-size="100%,100%"></dc-import>
+  </div>
+
+  <div style="position:relative;zIndex:1">
+    <a href="#main" style="position:absolute;left:-9999px;top:0;zIndex:99;background:#6d3fa8;color:#ffffff;padding:14px 22px;fontSize:12px;letterSpacing:0.2em;textDecoration:none" style-focus="left:16px;top:16px">SKIP TO MAIN CONTENT</a>
+    <dc-import name="WiCySNav" page="home" hint-size="100%,70px"></dc-import>
+    <main id="main" tabindex="-1" style="display:block">
+
+    <!-- HERO -->
+    <div style="maxWidth:1120px;margin:0 auto;padding:104px 24px 0;display:grid;gridTemplateColumns:repeat(auto-fit,minmax(320px,1fr));gap:56px;alignItems:center">
+      <div style="display:grid;gap:26px">
+        <h1 style="margin:0;fontFamily:'Silkscreen',monospace;fontSize:68px;lineHeight:1.06;letterSpacing:0.02em;color:#241a38">WICYS<br>@ UCI</h1>
+        <p style="margin:0;color:#55496e;fontSize:14px;lineHeight:2;letterSpacing:0.06em;textWrap:pretty;maxWidth:460px">A community of women, men, allies, and advocates that support the WiCyS mission to recruit, retain and advance women in cybersecurity as part of a workforce solution.</p>
+        <div style="display:flex;gap:14px;flexWrap:wrap;marginTop:6px">
+          <a href="join.html" style="textDecoration:none;border:1px solid #6d3fa8;color:#2a2040;padding:0 26px;fontSize:12px;letterSpacing:0.26em;minHeight:48px;display:inline-flex;alignItems:center" style-hover="background:#6d3fa8;color:#ffffff">JOIN US</a>
+          <a href="events.html" style="textDecoration:none;border:1px solid #c9bcdd;color:#55496e;padding:0 26px;fontSize:12px;letterSpacing:0.26em;minHeight:48px;display:inline-flex;alignItems:center" style-hover="borderColor:#6d3fa8;color:#2a2040">FALL 2026 EVENTS</a>
+        </div>
+      </div>
+      <div style="display:grid;placeItems:center">
+        <img src="images/wicys-logo.png" alt="WiCyS — Women in CyberSecurity, Student Chapter at University of California, Irvine" style="width:100%;maxWidth:520px;height:auto;display:block"></img>
+      </div>
+    </div>
+
+    <!-- OPEN APPLICATIONS -->
+    <div style="maxWidth:1120px;margin:0 auto;padding:104px 24px 0">
+      <div style="display:flex;alignItems:center;gap:16px;marginBottom:40px">
+        <h2 style="margin:0;color:#5b2d92;fontSize:13px;letterSpacing:0.32em;fontWeight:700">OPEN APPLICATIONS</h2>
+        <div style="flex:1;height:1px;background:#e2dcec"></div>
+      </div>
+      <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+        <div style="background:#f6f1fc;padding:40px 34px;display:grid;gap:20px;alignContent:start">
+          <div style="display:flex;alignItems:center;gap:12px;flexWrap:wrap">
+            <span style="background:#6d3fa8;color:#ffffff;padding:7px 13px;fontSize:11px;letterSpacing:0.24em;fontWeight:700">NOW OPEN</span>
+            <span style="color:#3d1d66;fontSize:12px;letterSpacing:0.18em;fontWeight:700">DUE FRI, OCT 3 · 11:59 PM</span>
+          </div>
+          <h3 style="margin:0;fontFamily:'Silkscreen',monospace;fontSize:24px;lineHeight:1.25;letterSpacing:0.02em;color:#241a38">CYBER PROJECT COMPETITION</h3>
+          <p style="margin:0;color:#3f3457;fontSize:14px;lineHeight:1.95;letterSpacing:0.03em;textWrap:pretty">Join our inaugural cohort. Teams of 3–5 build a real security product over 8 weeks and demo it to industry judges. Apply as a builder or a mentor.</p>
+          <a href="https://forms.gle/TyYHPaKZchtDNGCZ7" target="_blank" rel="noopener" style="marginTop:4px;justifySelf:start;textDecoration:none;background:#6d3fa8;border:1px solid #6d3fa8;color:#ffffff;padding:0 28px;fontSize:12px;letterSpacing:0.24em;fontWeight:700;minHeight:52px;display:inline-flex;alignItems:center" style-hover="background:#4a1f78;borderColor:#4a1f78">APPLY TO COMPETE →</a>
+        </div>
+        <div style="background:#f6f1fc;padding:40px 34px;display:grid;gap:20px;alignContent:start">
+          <div style="display:flex;alignItems:center;gap:12px;flexWrap:wrap">
+            <span style="background:#6d3fa8;color:#ffffff;padding:7px 13px;fontSize:11px;letterSpacing:0.24em;fontWeight:700">NOW OPEN</span>
+            <span style="color:#3d1d66;fontSize:12px;letterSpacing:0.18em;fontWeight:700">DUE SUN, OCT 11 · 11:59 PM</span>
+          </div>
+          <h3 style="margin:0;fontFamily:'Silkscreen',monospace;fontSize:24px;lineHeight:1.25;letterSpacing:0.02em;color:#241a38">BOARD APPLICATIONS</h3>
+          <p style="margin:0;color:#3f3457;fontSize:14px;lineHeight:1.95;letterSpacing:0.03em;textWrap:pretty">Positions are open for 2026—2027 across event programming, marketing, relations, and graphic design. Prior board experience isn't required.</p>
+          <a href="https://forms.gle/LFbTC7ipALy6ZebJ7" target="_blank" rel="noopener" style="marginTop:4px;justifySelf:start;textDecoration:none;background:#6d3fa8;border:1px solid #6d3fa8;color:#ffffff;padding:0 28px;fontSize:12px;letterSpacing:0.24em;fontWeight:700;minHeight:52px;display:inline-flex;alignItems:center" style-hover="background:#4a1f78;borderColor:#4a1f78">APPLY TO THE BOARD →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHO WE ARE -->
+    <div style="maxWidth:1120px;margin:0 auto;padding:130px 24px 0">
+      <div style="display:flex;alignItems:center;gap:16px;marginBottom:40px">
+        <h2 style="margin:0;color:#5b2d92;fontSize:13px;letterSpacing:0.32em;fontWeight:700">WHO WE ARE</h2>
+        <div style="flex:1;height:1px;background:#e2dcec"></div>
+      </div>
+      <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(300px,1fr));gap:48px;alignItems:center">
+        <div style="display:grid;gap:34px;alignContent:start">
+          <p style="margin:0;color:#3f3457;fontSize:14px;lineHeight:2.1;letterSpacing:0.05em;textWrap:pretty">Founded in 2019 as a research lab initiative, WiCyS @ UCI has grown into a chapter-wide community — reaching students across every school at UCI through workshops, projects, and industry connections.</p>
+          <div style="display:grid;gap:16px;alignContent:start">
+            <div style="color:#6d3fa8;fontSize:12px;letterSpacing:0.2em">&gt; ALL MAJORS</div>
+            <div style="color:#6d3fa8;fontSize:12px;letterSpacing:0.2em">&gt; ALL BACKGROUNDS</div>
+            <div style="color:#6d3fa8;fontSize:12px;letterSpacing:0.2em">&gt; ALL EXPERIENCE LEVELS</div>
+            <a href="about.html" style="marginTop:8px;color:#665a80;fontSize:11px;letterSpacing:0.22em;textDecoration:none" style-hover="color:#5b2d92">MORE ABOUT US →</a>
+          </div>
+        </div>
+        <img src="images/who-we-are.png" alt="The WiCyS @ UCI board and members outside a UCI engineering building" style="width:100%;aspectRatio:3 / 2;objectFit:cover;objectPosition:50% 78%;alignSelf:center;display:block"></img>
+      </div>
+    </div>
+
+    <!-- WHAT'S HAPPENING -->
+    <sc-if value="{{ eventsPreview }}" hint-placeholder-val="{{ true }}">
+    <div style="maxWidth:1120px;margin:0 auto;padding:130px 24px 0">
+      <div style="display:flex;alignItems:center;gap:16px;marginBottom:40px">
+        <h2 style="margin:0;color:#5b2d92;fontSize:13px;letterSpacing:0.32em;fontWeight:700">WHAT'S HAPPENING</h2>
+        <div style="flex:1;height:1px;background:#e2dcec"></div>
+        <div style="color:#665a80;fontSize:11px;letterSpacing:0.24em">FALL QUARTER 2026</div>
+      </div>
+      <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+        <div style="background:#f6f1fc;padding:32px 28px;display:grid;gap:16px;alignContent:start">
+          <div style="color:#6d3fa8;fontSize:11px;letterSpacing:0.3em;fontWeight:700">W.01</div>
+          <h3 style="margin:0;color:#2a2040;fontSize:15px;letterSpacing:0.12em;fontWeight:700;lineHeight:1.5">WELCOME SOCIAL</h3>
+          <div style="display:grid;gap:8px">
+            <div style="color:#3f3457;fontSize:14px;letterSpacing:0.03em;fontWeight:700">Tuesday, 5:00—6:00 PM</div>
+            <div style="color:#55496e;fontSize:13px;letterSpacing:0.03em">Calit2, Room 4500</div>
+          </div>
+        </div>
+        <div style="background:#f6f1fc;padding:32px 28px;display:grid;gap:16px;alignContent:start">
+          <div style="color:#6d3fa8;fontSize:11px;letterSpacing:0.3em;fontWeight:700">W.02</div>
+          <h3 style="margin:0;color:#2a2040;fontSize:15px;letterSpacing:0.12em;fontWeight:700;lineHeight:1.5">CYBER PROJECT KICKOFF</h3>
+          <div style="display:grid;gap:8px">
+            <div style="color:#3f3457;fontSize:14px;letterSpacing:0.03em;fontWeight:700">Wednesday, 5:00—6:30 PM</div>
+            <div style="color:#55496e;fontSize:13px;letterSpacing:0.03em">Calit2, Room 4500</div>
+          </div>
+        </div>
+        <div style="background:#f6f1fc;padding:32px 28px;display:grid;gap:16px;alignContent:start">
+          <div style="color:#6d3fa8;fontSize:11px;letterSpacing:0.3em;fontWeight:700">W.03</div>
+          <h3 style="margin:0;color:#2a2040;fontSize:15px;letterSpacing:0.12em;fontWeight:700;lineHeight:1.5">INTERNSHIP PREP + SPEAKER</h3>
+          <div style="display:grid;gap:8px">
+            <div style="color:#3f3457;fontSize:14px;letterSpacing:0.03em;fontWeight:700">Tuesday, 5:00—6:00 PM</div>
+            <div style="color:#55496e;fontSize:13px;letterSpacing:0.03em">Calit2, Room 4500</div>
+          </div>
+        </div>
+      </div>
+      <a href="events.html" style="marginTop:44px;display:inline-block;textDecoration:none;border:1px solid #c9bcdd;color:#55496e;padding:0 24px;fontSize:12px;letterSpacing:0.26em;minHeight:48px;display:inline-flex;alignItems:center" style-hover="borderColor:#6d3fa8;color:#2a2040">SEE ALL EVENTS</a>
+    </div>
+    </sc-if>
+
+    <!-- CONNECT -->
+    <div style="maxWidth:1120px;margin:0 auto;padding:130px 24px 0">
+      <div style="background:#f6f1fc;padding:72px 40px;display:grid;gap:36px;justifyItems:center;textAlign:center">
+      <h2 style="margin:0;fontFamily:'Silkscreen',monospace;fontSize:32px;lineHeight:1.25;letterSpacing:0.02em;color:#241a38">CONNECT WITH US</h2>
+      <p style="margin:0;color:#3f3457;fontSize:15px;lineHeight:2;letterSpacing:0.04em;maxWidth:520px;textWrap:pretty">Follow along for meeting reminders, event photos, and application deadlines.</p>
+      <div style="display:flex;gap:20px;flexWrap:wrap;justifyContent:center">
+        <a href="https://instagram.com/wicysuci" style="display:inline-flex;alignItems:center;gap:12px;textDecoration:none;background:#ffffff;border:1px solid #ddd0ee;color:#2a2040;fontSize:13px;letterSpacing:0.2em;fontWeight:700;padding:0 26px;minHeight:60px" style-hover="borderColor:#6d3fa8;color:#4a1f78"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="square" strokeLinejoin="miter" aria-hidden="true" focusable="false" style="flexShrink:0"><rect x="3" y="3" width="18" height="18" rx="4"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg>@WICYSUCI</a>
+        <a href="https://discord.gg/UR2C5Xs5AH" target="_blank" rel="noopener" style="display:inline-flex;alignItems:center;gap:12px;textDecoration:none;background:#ffffff;border:1px solid #ddd0ee;color:#2a2040;fontSize:13px;letterSpacing:0.2em;fontWeight:700;padding:0 26px;minHeight:60px" style-hover="borderColor:#6d3fa8;color:#4a1f78"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="square" strokeLinejoin="miter" aria-hidden="true" focusable="false" style="flexShrink:0"><path d="M8.5 5.5h7l3.5 5.5v3.5l-4 4-1.5-2h-3l-1.5 2-4-4V11z"></path><circle cx="9.5" cy="12" r="1.2" fill="currentColor" stroke="none"></circle><circle cx="14.5" cy="12" r="1.2" fill="currentColor" stroke="none"></circle></svg>DISCORD</a>
+        <a href="mailto:wicys@uci.edu" style="display:inline-flex;alignItems:center;gap:12px;textDecoration:none;background:#ffffff;border:1px solid #ddd0ee;color:#2a2040;fontSize:13px;letterSpacing:0.2em;fontWeight:700;padding:0 26px;minHeight:60px" style-hover="borderColor:#6d3fa8;color:#4a1f78"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="square" strokeLinejoin="miter" aria-hidden="true" focusable="false" style="flexShrink:0"><rect x="3" y="5" width="18" height="14" rx="1"></rect><path d="M3 6.5l9 6.5 9-6.5"></path></svg>EMAIL</a>
+      </div>
+      </div>
+    </div>
+
+    </main>
+
+    <dc-import name="WiCySFooter" hint-size="100%,180px"></dc-import>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;eventsPreview&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { eventsPreview: this.props.eventsPreview ?? true };
+  }
+}
+</script>
+</body>
+</html>

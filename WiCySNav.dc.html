@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<nav aria-label="Main" style="position:sticky;top:0;zIndex:50;background:rgba(255,255,255,0.9);backdropFilter:blur(10px);fontFamily:'JetBrains Mono',monospace">
+  <div style="maxWidth:1120px;margin:0 auto;padding:14px 24px;display:flex;alignItems:center;justifyContent:space-between;gap:24px;flexWrap:wrap">
+    <a href="index.html" style="display:inline-flex;alignItems:center;gap:12px;minHeight:44px;textDecoration:none">
+      <img src="images/wicys-mark.png" alt="" style="height:34px;width:auto;display:block"></img>
+      <span style="color:#665a80;fontSize:12px;letterSpacing:0.22em;fontWeight:700">@ UCI</span>
+    </a>
+    <div style="display:flex;gap:26px;flexWrap:wrap;alignItems:center">
+      <a href="index.html" aria-current="{{ curHome }}" style="textDecoration:none;color:#3a2f52;fontSize:12px;letterSpacing:0.24em;display:grid;gap:6px;justifyItems:center;alignContent:center;minHeight:44px;padding:0 4px" style-hover="color:#4a1f78">HOME
+        <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}"><div style="height:2px;width:100%;background:#6d3fa8"></div></sc-if>
+      </a>
+      <a href="about.html" aria-current="{{ curAbout }}" style="textDecoration:none;color:#3a2f52;fontSize:12px;letterSpacing:0.24em;display:grid;gap:6px;justifyItems:center;alignContent:center;minHeight:44px;padding:0 4px" style-hover="color:#4a1f78">ABOUT
+        <sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}"><div style="height:2px;width:100%;background:#6d3fa8"></div></sc-if>
+      </a>
+      <a href="events.html" aria-current="{{ curEvents }}" style="textDecoration:none;color:#3a2f52;fontSize:12px;letterSpacing:0.24em;display:grid;gap:6px;justifyItems:center;alignContent:center;minHeight:44px;padding:0 4px" style-hover="color:#4a1f78">EVENTS
+        <sc-if value="{{ isEvents }}" hint-placeholder-val="{{ false }}"><div style="height:2px;width:100%;background:#6d3fa8"></div></sc-if>
+      </a>
+      <a href="project.html" aria-current="{{ curProject }}" style="textDecoration:none;color:#3a2f52;fontSize:12px;letterSpacing:0.24em;display:grid;gap:6px;justifyItems:center;alignContent:center;minHeight:44px;padding:0 4px" style-hover="color:#4a1f78">PROJECT
+        <sc-if value="{{ isProject }}" hint-placeholder-val="{{ false }}"><div style="height:2px;width:100%;background:#6d3fa8"></div></sc-if>
+      </a>
+      <a href="join.html" aria-current="{{ curJoin }}" style="textDecoration:none;color:#ffffff;background:#6d3fa8;padding:0 20px;minHeight:44px;display:inline-flex;alignItems:center;fontSize:12px;letterSpacing:0.24em;border:1px solid #6d3fa8" style-hover="background:transparent;color:#4a1f78">JOIN</a>
+    </div>
+  </div>
+</nav>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1120,&quot;height&quot;:70},&quot;page&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;about&quot;,&quot;events&quot;,&quot;project&quot;,&quot;join&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const p = this.props.page || "home";
+    return {
+      isHome: p === "home", isAbout: p === "about", isEvents: p === "events",
+      isProject: p === "project",
+      curHome: p === "home" ? "page" : undefined,
+      curAbout: p === "about" ? "page" : undefined,
+      curEvents: p === "events" ? "page" : undefined,
+      curProject: p === "project" ? "page" : undefined,
+      curJoin: p === "join" ? "page" : undefined
+    };
+  }
+}
+</script>
+</body>
+</html>
